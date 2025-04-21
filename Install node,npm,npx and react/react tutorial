@@ -32,5 +32,22 @@ added 185 packages, and audited 186 packages in 3m
   run `npm fund` for details
 
 found 0 vulnerabilities
-
+==> BELOW OPENS CODE FROM TERMINAL
 C:\Users\ASUS\VisualCodes\react-app>code .
+
+==>WAS FACING ISSUE THAT THE BROWSER WAS LOADING FINE BUT PROBLEMS WERE SHOWN IN VS COD.
+SOLUTION:
+👉 VS Code / TypeScript is treating your .tsx files as plain .ts files, so JSX like <h1>hello</h1> is throwing errors like:
+
+Cannot find name 'h1'
+
+Unterminated regular expression literal
+
+✅ Here's How to Fix It
+The issue is very likely missing React typings or an incorrect setup in your project.
+
+🔧 Step-by-Step Fix
+1. ✅ Install React + JSX TypeScript Support
+Run this in your terminal:
+npm install --save-dev @types/react @types/react-dom
+==>This gives TypeScript awareness of JSX and React component types.
