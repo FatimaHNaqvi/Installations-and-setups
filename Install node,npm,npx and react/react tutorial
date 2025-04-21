@@ -51,3 +51,6 @@ The issue is very likely missing React typings or an incorrect setup in your pro
 Run this in your terminal:
 npm install --save-dev @types/react @types/react-dom
 ==>This gives TypeScript awareness of JSX and React component types.
+
+if this does not work then select the language mode to typescript jsx for the said files
+
